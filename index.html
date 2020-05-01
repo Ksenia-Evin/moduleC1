@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="app-style.css">
+</head>
+<body>
+	<div class="timer">
+	  <div class="timer_controls">
+	  	<h3>Choose any time that is convenient for you on the button:)...</h3> 
+	    <button data-time="5" class="timer_button">5s</button>
+	  	<button data-time="20" class="timer_button">20s</button>
+	  	<button data-time="30" class="timer_button">30s</button>
+		<button data-time="300" class="timer_button">5 min</button>
+		<button data-time="900" class="timer_button">15 min</button>
+		<button data-time="1200" class="timer_button">20 min</button>
+	    <form name="customForm" id="custom">
+			<label for="input_minutes">Minutes: </label>
+	        <input type="number" id="input_minutes" value="00" min="00" max="60" name="minutes" placeholder="Enter Minutes">
+	        <h3>...or input minutes, then press enter to start timer</h3>
+	    </form>
+	  </div>
+	  <div class="display">
+	  	<h1 class="display_time-left"></h1>
+	  	<p class='message'></p>
+      </div>
+      <div class="buttons">
+	    <button class="stop">Stop</button>
+	  </div>
+	</div>
+	<script type="text/javascript" src="my-timer.js"></script>
+</body>
+</html>
+
+
+
